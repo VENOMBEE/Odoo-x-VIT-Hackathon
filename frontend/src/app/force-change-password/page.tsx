@@ -4,7 +4,7 @@ import * as React from 'react';
 import { useAuthStore } from '@/store/auth';
 import { useRouter } from 'next/navigation';
 import { useMutation } from '@tanstack/react-query';
-import apiClient from '@/lib/api';
+import apiClient from '@/services/api';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -88,3 +88,4 @@ export default function ForceChangePasswordPage() {
     </div>
   );
 }
+

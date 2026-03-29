@@ -12,7 +12,7 @@ import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { toast } from 'sonner';
-import apiClient from '@/lib/api';
+import apiClient from '@/services/api';
 import { useAuthStore } from '@/store/auth';
 
 const signupSchema = z.object({
@@ -145,3 +145,4 @@ export default function SignupPage() {
     </div>
   );
 }
+

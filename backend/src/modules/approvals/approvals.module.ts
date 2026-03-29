@@ -1,8 +1,8 @@
 import { Module, forwardRef } from '@nestjs/common';
-import { ApprovalsService } from './approvals.service';
-import { ApprovalsController } from './approvals.controller';
-import { ApprovalEngineService } from './approval-engine.service';
-import { TemplateRoutingService } from './template-routing.service';
+import { ApprovalsService } from './services/approvals.service';
+import { ApprovalsController } from './controllers/approvals.controller';
+import { ApprovalEngineService } from './services/approval-engine.service';
+import { TemplateRoutingService } from './services/template-routing.service';
 import { ExpensesModule } from '../expenses/expenses.module';
 
 @Module({

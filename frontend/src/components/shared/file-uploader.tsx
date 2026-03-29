@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { UploadCloud, CheckCircle2, Loader2, XCircle } from 'lucide-react';
 import { useMutation } from '@tanstack/react-query';
-import { uploadApi, ocrApi } from '@/lib/api/misc';
+import { uploadApi, ocrApi } from '@/services/api/misc';
 import { toast } from 'sonner';
 
 interface FileUploaderProps {
@@ -92,3 +92,4 @@ export function FileUploader({ onUploadSuccess, onOcrComplete, triggerOcr }: Fil
     </div>
   );
 }
+

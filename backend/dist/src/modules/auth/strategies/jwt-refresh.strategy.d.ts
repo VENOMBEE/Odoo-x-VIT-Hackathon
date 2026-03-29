@@ -12,6 +12,19 @@ export declare class JwtRefreshStrategy extends JwtRefreshStrategy_base {
     validate(req: Request, payload: {
         sub: string;
         email: string;
-    }): Promise<any>;
+    }): Promise<{
+        refreshToken: any;
+        id: string;
+        companyId: string;
+        name: string;
+        email: string;
+        passwordHash: string;
+        role: import("@prisma/client").$Enums.Role;
+        managerId: string | null;
+        isManagerApprover: boolean;
+        mustChangePassword: boolean;
+        createdAt: Date;
+        updatedAt: Date;
+    }>;
 }
 export {};

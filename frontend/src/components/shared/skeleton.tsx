@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils';
+import { cn } from '@/utils/utils';
 
 function Skeleton({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
@@ -31,3 +31,4 @@ export function SkeletonTable({ rows = 5 }: { rows?: number }) {
 }
 
 export { Skeleton };
+

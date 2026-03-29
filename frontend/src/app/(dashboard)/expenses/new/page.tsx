@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useCreateExpense } from '@/lib/hooks/useExpenses';
+import { useCreateExpense } from '@/hooks/useExpenses';
 import { ExpenseForm } from '@/components/forms/expense-form';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -34,3 +34,4 @@ export default function NewExpensePage() {
     </div>
   );
 }
+

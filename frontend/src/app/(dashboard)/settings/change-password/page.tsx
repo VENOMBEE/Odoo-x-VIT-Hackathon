@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import { toast } from "sonner";
-import apiClient from "@/lib/api";
+import apiClient from "@/services/api";
 
 import {
   Card,
@@ -153,3 +153,4 @@ export default function ChangePasswordPage() {
     </div>
   );
 }
+

@@ -10,7 +10,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
-import apiClient from '@/lib/api';
+import apiClient from '@/services/api';
 
 const forgotPasswordSchema = z.object({
   email: z.string().email({ message: 'Invalid email address' }),
@@ -99,3 +99,4 @@ export default function ForgotPasswordPage() {
     </div>
   );
 }
+

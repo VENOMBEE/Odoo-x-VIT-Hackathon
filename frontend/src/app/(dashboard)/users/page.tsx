@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { useUsers, useCreateUser, useDeleteUser, useUpdateUser } from '@/lib/hooks/useUsers';
+import { useUsers, useCreateUser, useDeleteUser, useUpdateUser } from '@/hooks/useUsers';
 import { SkeletonTable } from '@/components/shared/skeleton';
 import { Button } from '@/components/ui/button';
 import { Plus, Trash, UserCog } from 'lucide-react';
@@ -201,3 +201,4 @@ export default function UsersPage() {
     </div>
   );
 }
+

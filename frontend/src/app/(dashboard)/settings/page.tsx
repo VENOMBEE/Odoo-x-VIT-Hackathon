@@ -1,8 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { useTemplates, useCreateTemplate } from '@/lib/hooks/useApprovals';
-import { useUsers } from '@/lib/hooks/useUsers';
+import { useTemplates, useCreateTemplate } from '@/hooks/useApprovals';
+import { useUsers } from '@/hooks/useUsers';
 import { SkeletonTable } from '@/components/shared/skeleton';
 import { Button } from '@/components/ui/button';
 import { ShieldAlert, Trash, Plus } from 'lucide-react';
@@ -107,3 +107,4 @@ export default function SettingsTemplatesPage() {
     </div>
   );
 }
+

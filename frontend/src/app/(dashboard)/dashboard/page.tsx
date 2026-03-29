@@ -1,6 +1,6 @@
 'use client';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { useExpenseStats } from '@/lib/hooks/useExpenses';
+import { useExpenseStats } from '@/hooks/useExpenses';
 import { SkeletonCard } from '@/components/shared/skeleton';
 import { Banknote, CheckCircle, Clock } from 'lucide-react';
 
@@ -55,4 +55,5 @@ export default function DashboardPage() {
     </div>
   );
 }
+
 

@@ -1,6 +1,6 @@
 import { Module, forwardRef } from '@nestjs/common';
-import { ExpensesService } from './expenses.service';
-import { ExpensesController } from './expenses.controller';
+import { ExpensesService } from './services/expenses.service';
+import { ExpensesController } from './controllers/expenses.controller';
 import { CurrencyModule } from '../currency/currency.module';
 import { ApprovalsModule } from '../approvals/approvals.module';
 

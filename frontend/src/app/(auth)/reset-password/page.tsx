@@ -11,7 +11,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
-import apiClient from '@/lib/api';
+import apiClient from '@/services/api';
 
 const resetPasswordSchema = z.object({
   newPassword: z.string().min(6, { message: 'Password must be at least 6 characters' }),
@@ -131,3 +131,4 @@ export default function ResetPasswordPage() {
     </div>
   );
 }
+

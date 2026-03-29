@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import Link from 'next/link';
-import { useExpenses } from '@/lib/hooks/useExpenses';
+import { useExpenses } from '@/hooks/useExpenses';
 import { SkeletonTable } from '@/components/shared/skeleton';
 import { Button } from '@/components/ui/button';
 import { Plus } from 'lucide-react';
@@ -119,3 +119,4 @@ export default function ExpensesPage() {
     </div>
   );
 }
+

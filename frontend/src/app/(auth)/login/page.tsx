@@ -11,7 +11,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
-import apiClient from '@/lib/api';
+import apiClient from '@/services/api';
 import { useAuthStore } from '@/store/auth';
 
 const loginSchema = z.object({
@@ -112,3 +112,4 @@ export default function LoginPage() {
     </div>
   );
 }
+

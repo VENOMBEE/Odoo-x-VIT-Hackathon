@@ -1,7 +1,7 @@
 'use client';
 import * as React from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { currencyApi } from '@/lib/api/misc';
+import { currencyApi } from '@/services/api/misc';
 import {
   Select,
   SelectContent,
@@ -44,3 +44,4 @@ export function CurrencySelector({ value, onChange, disabled }: CurrencySelector
     </Select>
   );
 }
+

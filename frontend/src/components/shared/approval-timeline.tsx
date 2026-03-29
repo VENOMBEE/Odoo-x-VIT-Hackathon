@@ -1,6 +1,6 @@
 import { formatDistanceToNow } from 'date-fns';
 import { CheckCircle2, Clock, XCircle, ChevronRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn } from '@/utils/utils';
 
 interface TimelineStep {
   id: string;
@@ -69,3 +69,4 @@ export function ApprovalTimeline({ steps = [] }: { steps: TimelineStep[] }) {
     </div>
   );
 }
+
