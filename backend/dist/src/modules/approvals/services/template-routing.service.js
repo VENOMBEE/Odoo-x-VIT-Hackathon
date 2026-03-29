@@ -12,7 +12,7 @@ var TemplateRoutingService_1;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TemplateRoutingService = void 0;
 const common_1 = require("@nestjs/common");
-const prisma_service_1 = require("../prisma/prisma.service");
+const prisma_service_1 = require("../../prisma/prisma.service");
 let TemplateRoutingService = TemplateRoutingService_1 = class TemplateRoutingService {
     prisma;
     logger = new common_1.Logger(TemplateRoutingService_1.name);

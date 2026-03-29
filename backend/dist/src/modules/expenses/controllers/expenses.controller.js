@@ -19,7 +19,7 @@ const expenses_service_1 = require("../services/expenses.service");
 const create_expense_dto_1 = require("../dto/create-expense.dto");
 const jwt_auth_guard_1 = require("../../../common/guards/jwt-auth.guard");
 const current_user_decorator_1 = require("../../../common/decorators/current-user.decorator");
-const approvals_service_1 = require("../../approvals/approvals.service");
+const approvals_service_1 = require("../../approvals/services/approvals.service");
 let ExpensesController = class ExpensesController {
     expensesService;
     approvalsService;

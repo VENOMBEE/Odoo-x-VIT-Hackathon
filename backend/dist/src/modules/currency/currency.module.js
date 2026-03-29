@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CurrencyModule = void 0;
 const common_1 = require("@nestjs/common");
-const currency_service_1 = require("./currency.service");
-const currency_controller_1 = require("./currency.controller");
+const currency_service_1 = require("./services/currency.service");
+const currency_controller_1 = require("./controllers/currency.controller");
 let CurrencyModule = class CurrencyModule {
 };
 exports.CurrencyModule = CurrencyModule;

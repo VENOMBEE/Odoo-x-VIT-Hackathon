@@ -1,5 +1,5 @@
 import { PrismaService } from '../../prisma/prisma.service';
-import { EmailService } from '../../email/email.service';
+import { EmailService } from '../../email/services/email.service';
 import { CreateUserDto } from '../dto/create-user.dto';
 import { UpdateUserDto } from '../dto/update-user.dto';
 import { AssignRoleDto } from '../dto/assign-role.dto';

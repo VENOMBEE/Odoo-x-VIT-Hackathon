@@ -10,11 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.JwtRefreshStrategy = void 0;
+const common_1 = require("@nestjs/common");
 const passport_1 = require("@nestjs/passport");
 const passport_jwt_1 = require("passport-jwt");
 const config_1 = require("@nestjs/config");
 const prisma_service_1 = require("../../prisma/prisma.service");
-const common_1 = require("@nestjs/common");
+const common_2 = require("@nestjs/common");
 let JwtRefreshStrategy = class JwtRefreshStrategy extends (0, passport_1.PassportStrategy)(passport_jwt_1.Strategy, 'jwt-refresh') {
     configService;
     prisma;
@@ -37,14 +38,14 @@ let JwtRefreshStrategy = class JwtRefreshStrategy extends (0, passport_1.Passpor
             where: { id: payload.sub },
         });
         if (!user || !user.refreshToken) {
-            throw new common_1.UnauthorizedException('Invalid refresh token');
+            throw new common_2.UnauthorizedException('Invalid refresh token');
         }
         return { ...user, refreshToken };
     }
 };
 exports.JwtRefreshStrategy = JwtRefreshStrategy;
 exports.JwtRefreshStrategy = JwtRefreshStrategy = __decorate([
-    (0, passport_1.Injectable)(),
+    (0, common_1.Injectable)(),
     __metadata("design:paramtypes", [config_1.ConfigService,
         prisma_service_1.PrismaService])
 ], JwtRefreshStrategy);

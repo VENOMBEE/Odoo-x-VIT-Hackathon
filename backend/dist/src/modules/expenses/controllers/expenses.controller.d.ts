@@ -1,7 +1,7 @@
 import { ExpenseStatus } from '@prisma/client';
 import { ExpensesService } from '../services/expenses.service';
 import { CreateExpenseDto } from '../dto/create-expense.dto';
-import { ApprovalsService } from '../../approvals/approvals.service';
+import { ApprovalsService } from '../../approvals/services/approvals.service';
 export declare class ExpensesController {
     private readonly expensesService;
     private readonly approvalsService;

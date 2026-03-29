@@ -13,7 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ExpensesService = void 0;
 const common_1 = require("@nestjs/common");
 const prisma_service_1 = require("../../prisma/prisma.service");
-const currency_service_1 = require("../../currency/currency.service");
+const currency_service_1 = require("../../currency/services/currency.service");
 const client_1 = require("@prisma/client");
 const pagination_util_1 = require("../../../common/utils/pagination.util");
 let ExpensesService = ExpensesService_1 = class ExpensesService {

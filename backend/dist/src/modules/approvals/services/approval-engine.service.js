@@ -12,7 +12,7 @@ var ApprovalEngineService_1;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ApprovalEngineService = void 0;
 const common_1 = require("@nestjs/common");
-const prisma_service_1 = require("../prisma/prisma.service");
+const prisma_service_1 = require("../../prisma/prisma.service");
 const template_routing_service_1 = require("./template-routing.service");
 let ApprovalEngineService = ApprovalEngineService_1 = class ApprovalEngineService {
     prisma;

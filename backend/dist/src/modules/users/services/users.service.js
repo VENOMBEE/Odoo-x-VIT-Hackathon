@@ -47,7 +47,7 @@ exports.UsersService = void 0;
 const common_1 = require("@nestjs/common");
 const bcrypt = __importStar(require("bcryptjs"));
 const prisma_service_1 = require("../../prisma/prisma.service");
-const email_service_1 = require("../../email/email.service");
+const email_service_1 = require("../../email/services/email.service");
 const USER_SELECT = {
     id: true,
     name: true,

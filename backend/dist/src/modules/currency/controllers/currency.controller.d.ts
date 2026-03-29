@@ -1,4 +1,4 @@
-import { CurrencyService } from './currency.service';
+import { CurrencyService } from '../services/currency.service';
 export declare class CurrencyController {
     private readonly currencyService;
     constructor(currencyService: CurrencyService);

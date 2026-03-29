@@ -1,6 +1,6 @@
 'use client';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { usersApi, CreateUserPayload, UpdateUserPayload } from '../api/users';
+import { usersApi, CreateUserPayload, UpdateUserPayload } from '../services/api/users';
 import { toast } from 'sonner';
 
 export const useUsers = () =>

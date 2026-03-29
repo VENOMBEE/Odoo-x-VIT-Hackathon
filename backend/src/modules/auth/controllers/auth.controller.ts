@@ -10,11 +10,11 @@ import {
 } from '@nestjs/common';
 import type { Response } from 'express';
 import { AuthService } from '../services/auth.service';
-import type { SignupDto } from '../dto/signup.dto';
-import type { LoginDto } from '../dto/login.dto';
-import type { ChangePasswordDto } from '../dto/change-password.dto';
-import type { ForgotPasswordDto } from '../dto/forgot-password.dto';
-import type { ResetPasswordDto } from '../dto/reset-password.dto';
+import { SignupDto } from '../dto/signup.dto';
+import { LoginDto } from '../dto/login.dto';
+import { ChangePasswordDto } from '../dto/change-password.dto';
+import { ForgotPasswordDto } from '../dto/forgot-password.dto';
+import { ResetPasswordDto } from '../dto/reset-password.dto';
 import { JwtAuthGuard } from '../../../common/guards/jwt-auth.guard';
 import { JwtRefreshGuard } from '../../../common/guards/jwt-refresh.guard';
 import { CurrentUser } from '../../../common/decorators/current-user.decorator';

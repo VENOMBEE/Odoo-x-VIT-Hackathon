@@ -1,10 +1,10 @@
 import { Body, Controller, Get, Patch, UseGuards } from '@nestjs/common';
 import { Role } from '@prisma/client';
-import { CompaniesService } from './companies.service';
-import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
-import { RolesGuard } from '../../common/guards/roles.guard';
-import { Roles } from '../../common/decorators/roles.decorator';
-import { CurrentUser } from '../../common/decorators/current-user.decorator';
+import { CompaniesService } from '../services/companies.service';
+import { JwtAuthGuard } from '../../../common/guards/jwt-auth.guard';
+import { RolesGuard } from '../../../common/guards/roles.guard';
+import { Roles } from '../../../common/decorators/roles.decorator';
+import { CurrentUser } from '../../../common/decorators/current-user.decorator';
 
 @Controller('companies')
 @UseGuards(JwtAuthGuard)

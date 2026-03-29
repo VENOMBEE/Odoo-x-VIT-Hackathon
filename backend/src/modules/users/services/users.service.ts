@@ -7,7 +7,7 @@ import {
 } from '@nestjs/common';
 import * as bcrypt from 'bcryptjs';
 import { PrismaService } from '../../prisma/prisma.service';
-import { EmailService } from '../../email/email.service';
+import { EmailService } from '../../email/services/email.service';
 import { CreateUserDto } from '../dto/create-user.dto';
 import { UpdateUserDto } from '../dto/update-user.dto';
 import { AssignRoleDto } from '../dto/assign-role.dto';
@@ -93,7 +93,7 @@ export class UsersService {
         temporaryPassword: randomPassword,
         companyName: company?.name ?? 'Your Company',
       })
-      .catch((err) => this.logger.error(`Failed to queue welcome email: ${err.message}`));
+      .catch((err: any) => this.logger.error(`Failed to queue welcome email: ${err.message}`));
 
     return { user, temporaryPassword: randomPassword };
   }

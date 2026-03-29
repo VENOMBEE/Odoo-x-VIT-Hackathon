@@ -15,11 +15,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ApprovalsController = void 0;
 const common_1 = require("@nestjs/common");
 const client_1 = require("@prisma/client");
-const approvals_service_1 = require("./approvals.service");
-const jwt_auth_guard_1 = require("../../common/guards/jwt-auth.guard");
-const roles_guard_1 = require("../../common/guards/roles.guard");
-const roles_decorator_1 = require("../../common/decorators/roles.decorator");
-const current_user_decorator_1 = require("../../common/decorators/current-user.decorator");
+const approvals_service_1 = require("../services/approvals.service");
+const jwt_auth_guard_1 = require("../../../common/guards/jwt-auth.guard");
+const roles_guard_1 = require("../../../common/guards/roles.guard");
+const roles_decorator_1 = require("../../../common/decorators/roles.decorator");
+const current_user_decorator_1 = require("../../../common/decorators/current-user.decorator");
 let ApprovalsController = class ApprovalsController {
     approvalsService;
     constructor(approvalsService) {

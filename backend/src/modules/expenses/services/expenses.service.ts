@@ -6,7 +6,7 @@ import {
   BadRequestException,
 } from '@nestjs/common';
 import { PrismaService } from '../../prisma/prisma.service';
-import { CurrencyService } from '../../currency/currency.service';
+import { CurrencyService } from '../../currency/services/currency.service';
 import { CreateExpenseDto } from '../dto/create-expense.dto';
 import { ExpenseStatus, Role } from '@prisma/client';
 import { paginate, buildPaginatedResult } from '../../../common/utils/pagination.util';

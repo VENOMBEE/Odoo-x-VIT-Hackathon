@@ -5,7 +5,7 @@ import {
   Logger,
   NotFoundException,
 } from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
+import { PrismaService } from '../../prisma/prisma.service';
 import { TemplateRoutingService } from './template-routing.service';
 
 @Injectable()
@@ -128,7 +128,7 @@ export class ApprovalEngineService {
 
     // Check if this was the last step
     const remainingPending = allApprovals.filter(
-      (a) => a.id !== currentStep.id && a.status === 'PENDING',
+      (a: any) => a.id !== currentStep.id && a.status === 'PENDING',
     );
 
     if (remainingPending.length === 0) {

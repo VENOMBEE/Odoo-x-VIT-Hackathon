@@ -8,10 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ApprovalsModule = void 0;
 const common_1 = require("@nestjs/common");
-const approvals_service_1 = require("./approvals.service");
-const approvals_controller_1 = require("./approvals.controller");
-const approval_engine_service_1 = require("./approval-engine.service");
-const template_routing_service_1 = require("./template-routing.service");
+const approvals_service_1 = require("./services/approvals.service");
+const approvals_controller_1 = require("./controllers/approvals.controller");
+const approval_engine_service_1 = require("./services/approval-engine.service");
+const template_routing_service_1 = require("./services/template-routing.service");
 const expenses_module_1 = require("../expenses/expenses.module");
 let ApprovalsModule = class ApprovalsModule {
 };

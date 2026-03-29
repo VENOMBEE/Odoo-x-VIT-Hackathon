@@ -1,5 +1,5 @@
 import { PrismaService } from '../../prisma/prisma.service';
-import { CurrencyService } from '../../currency/currency.service';
+import { CurrencyService } from '../../currency/services/currency.service';
 import { CreateExpenseDto } from '../dto/create-expense.dto';
 import { ExpenseStatus, Role } from '@prisma/client';
 export declare class ExpensesService {

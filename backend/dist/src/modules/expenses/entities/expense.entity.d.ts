@@ -1,16 +1,15 @@
-import { ExpenseStatus, ExpenseCategory } from '@prisma/client';
-import { Decimal } from '@prisma/client/runtime/library';
+import { ExpenseStatus, ExpenseCategory, Prisma } from '@prisma/client';
 export declare class ExpenseEntity {
     id: string;
     companyId: string;
     submittedById: string;
     templateId: string | null;
     routingRuleId: string | null;
-    amount: Decimal;
+    amount: Prisma.Decimal;
     currency: string;
-    convertedAmount: Decimal | null;
+    convertedAmount: Prisma.Decimal | null;
     companyCurrency: string | null;
-    exchangeRateUsed: Decimal | null;
+    exchangeRateUsed: Prisma.Decimal | null;
     rateTimestamp: Date | null;
     category: ExpenseCategory;
     description: string;

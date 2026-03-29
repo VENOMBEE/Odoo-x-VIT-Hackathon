@@ -6,7 +6,7 @@ import { LoginDto } from '../dto/login.dto';
 import { ChangePasswordDto } from '../dto/change-password.dto';
 import { ForgotPasswordDto } from '../dto/forgot-password.dto';
 import { ResetPasswordDto } from '../dto/reset-password.dto';
-import { CurrencyService } from '../../currency/currency.service';
+import { CurrencyService } from '../../currency/services/currency.service';
 export declare class AuthService {
     private prisma;
     private jwtService;

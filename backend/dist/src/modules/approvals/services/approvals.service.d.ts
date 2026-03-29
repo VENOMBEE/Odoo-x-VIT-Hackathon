@@ -1,8 +1,20 @@
-import { ApprovalsService } from './approvals.service';
-export declare class ApprovalsController {
-    private readonly approvalsService;
-    constructor(approvalsService: ApprovalsService);
-    getPending(user: any): Promise<{
+import { PrismaService } from '../../prisma/prisma.service';
+import { ApprovalEngineService } from './approval-engine.service';
+import { TemplateRoutingService } from './template-routing.service';
+export declare class ApprovalsService {
+    private prisma;
+    private engine;
+    private routingService;
+    constructor(prisma: PrismaService, engine: ApprovalEngineService, routingService: TemplateRoutingService);
+    initializeApprovalChain(expenseId: string, companyId: string, convertedAmount: number, submittedById: string): Promise<void>;
+    approve(expenseId: string, approverId: string, companyId: string, comments?: string): Promise<{
+        status: string;
+        reason: string;
+    }>;
+    reject(expenseId: string, approverId: string, companyId: string, comments: string): Promise<{
+        status: string;
+    }>;
+    getPendingForApprover(approverId: string, companyId: string): Promise<{
         myApprovalStep: {
             expense: {
                 company: {
@@ -75,14 +87,13 @@ export declare class ApprovalsController {
         templateId: string | null;
         routingRuleId: string | null;
     }[]>;
-    approve(expenseId: string, comments: string, user: any): Promise<{
-        status: string;
-        reason: string;
-    }>;
-    reject(expenseId: string, comments: string, user: any): Promise<{
-        status: string;
-    }>;
-    createTemplate(dto: any, companyId: string): Promise<{
+    createTemplate(companyId: string, dto: {
+        name: string;
+        conditionalRuleType?: string;
+        percentageThreshold?: number;
+        specificApproverId?: string;
+        isDefault?: boolean;
+    }): Promise<{
         steps: ({
             approver: {
                 id: string;
@@ -162,7 +173,7 @@ export declare class ApprovalsController {
         isDefault: boolean;
         specificApproverId: string | null;
     }>;
-    updateTemplate(id: string, dto: any, companyId: string): Promise<{
+    updateTemplate(id: string, companyId: string, dto: any): Promise<{
         id: string;
         companyId: string;
         name: string;
@@ -176,7 +187,11 @@ export declare class ApprovalsController {
     deleteTemplate(id: string, companyId: string): Promise<{
         message: string;
     }>;
-    addStep(templateId: string, dto: any, companyId: string): Promise<{
+    addStep(templateId: string, companyId: string, dto: {
+        approverId: string;
+        stepOrder: number;
+        roleLabel?: string;
+    }): Promise<{
         approver: {
             id: string;
             name: string;
@@ -191,10 +206,10 @@ export declare class ApprovalsController {
         approverId: string;
         templateId: string;
     }>;
-    deleteStep(id: string, companyId: string): Promise<{
+    deleteStep(stepId: string, companyId: string): Promise<{
         message: string;
     }>;
-    createRoutingRule(dto: any, companyId: string): Promise<{
+    createRoutingRule(companyId: string, dto: any): Promise<{
         template: {
             id: string;
             name: string;
@@ -226,7 +241,46 @@ export declare class ApprovalsController {
         priority: number;
         isActive: boolean;
     })[]>;
-    previewRouting(amount: string, companyId: string): Promise<{
+    getRoutingRule(id: string, companyId: string): Promise<{
+        template: {
+            id: string;
+            name: string;
+        };
+    } & {
+        id: string;
+        companyId: string;
+        createdAt: Date;
+        updatedAt: Date;
+        templateId: string;
+        minAmount: import("@prisma/client-runtime-utils").Decimal;
+        maxAmount: import("@prisma/client-runtime-utils").Decimal | null;
+        priority: number;
+        isActive: boolean;
+    }>;
+    updateRoutingRule(id: string, companyId: string, dto: any): Promise<{
+        template: {
+            id: string;
+            name: string;
+        };
+    } & {
+        id: string;
+        companyId: string;
+        createdAt: Date;
+        updatedAt: Date;
+        templateId: string;
+        minAmount: import("@prisma/client-runtime-utils").Decimal;
+        maxAmount: import("@prisma/client-runtime-utils").Decimal | null;
+        priority: number;
+        isActive: boolean;
+    }>;
+    deleteRoutingRule(id: string, companyId: string): Promise<{
+        message: string;
+    }>;
+    validateRoutingRules(companyId: string, rules: any[]): Promise<{
+        valid: boolean;
+        issues: string[];
+    }>;
+    previewRouting(companyId: string, amount: number): Promise<{
         template: ({
             steps: ({
                 approver: {
@@ -260,44 +314,5 @@ export declare class ApprovalsController {
     } | {
         amount: number;
         error: any;
-    }>;
-    getRoutingRule(id: string, companyId: string): Promise<{
-        template: {
-            id: string;
-            name: string;
-        };
-    } & {
-        id: string;
-        companyId: string;
-        createdAt: Date;
-        updatedAt: Date;
-        templateId: string;
-        minAmount: import("@prisma/client-runtime-utils").Decimal;
-        maxAmount: import("@prisma/client-runtime-utils").Decimal | null;
-        priority: number;
-        isActive: boolean;
-    }>;
-    updateRoutingRule(id: string, dto: any, companyId: string): Promise<{
-        template: {
-            id: string;
-            name: string;
-        };
-    } & {
-        id: string;
-        companyId: string;
-        createdAt: Date;
-        updatedAt: Date;
-        templateId: string;
-        minAmount: import("@prisma/client-runtime-utils").Decimal;
-        maxAmount: import("@prisma/client-runtime-utils").Decimal | null;
-        priority: number;
-        isActive: boolean;
-    }>;
-    deleteRoutingRule(id: string, companyId: string): Promise<{
-        message: string;
-    }>;
-    validateRules(rules: any[], companyId: string): Promise<{
-        valid: boolean;
-        issues: string[];
     }>;
 }

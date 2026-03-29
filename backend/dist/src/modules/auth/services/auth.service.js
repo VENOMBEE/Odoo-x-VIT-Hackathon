@@ -50,7 +50,7 @@ const config_1 = require("@nestjs/config");
 const bcrypt = __importStar(require("bcryptjs"));
 const uuid_1 = require("uuid");
 const prisma_service_1 = require("../../prisma/prisma.service");
-const currency_service_1 = require("../../currency/currency.service");
+const currency_service_1 = require("../../currency/services/currency.service");
 let AuthService = AuthService_1 = class AuthService {
     prisma;
     jwtService;

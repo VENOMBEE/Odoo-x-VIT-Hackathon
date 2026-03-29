@@ -33,9 +33,17 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+require("dotenv/config");
+const adapter_pg_1 = require("@prisma/adapter-pg");
 const client_1 = require("@prisma/client");
 const bcrypt = __importStar(require("bcryptjs"));
-const prisma = new client_1.PrismaClient();
+const connectionString = process.env.DATABASE_URL?.trim();
+if (!connectionString) {
+    throw new Error('DATABASE_URL must be set');
+}
+const prisma = new client_1.PrismaClient({
+    adapter: new adapter_pg_1.PrismaPg(connectionString),
+});
 async function main() {
     console.log('Seeding database...');
     const existingAdmin = await prisma.user.findFirst({ where: { email: 'admin@acme.com' } });

@@ -1,6 +1,6 @@
 'use client';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { approvalsApi } from '../api/approvals';
+import { approvalsApi } from '../services/api/approvals';
 import { toast } from 'sonner';
 
 export const usePendingApprovals = () =>

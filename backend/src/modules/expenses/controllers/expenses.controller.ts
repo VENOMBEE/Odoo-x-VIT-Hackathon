@@ -15,7 +15,7 @@ import { ExpensesService } from '../services/expenses.service';
 import { CreateExpenseDto } from '../dto/create-expense.dto';
 import { JwtAuthGuard } from '../../../common/guards/jwt-auth.guard';
 import { CurrentUser } from '../../../common/decorators/current-user.decorator';
-import { ApprovalsService } from '../../approvals/approvals.service';
+import { ApprovalsService } from '../../approvals/services/approvals.service';
 
 @Controller('expenses')
 @UseGuards(JwtAuthGuard)

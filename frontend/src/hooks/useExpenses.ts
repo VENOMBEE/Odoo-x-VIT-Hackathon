@@ -1,6 +1,6 @@
 'use client';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { expensesApi, CreateExpensePayload } from '../api/expenses';
+import { expensesApi, CreateExpensePayload } from '../services/api/expenses';
 import { toast } from 'sonner';
 
 export const useExpenses = (params?: Record<string, string | number>) =>

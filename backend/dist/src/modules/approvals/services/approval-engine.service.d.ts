@@ -1,4 +1,4 @@
-import { PrismaService } from '../prisma/prisma.service';
+import { PrismaService } from '../../prisma/prisma.service';
 import { TemplateRoutingService } from './template-routing.service';
 export declare class ApprovalEngineService {
     private prisma;

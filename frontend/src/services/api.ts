@@ -9,6 +9,20 @@ const apiClient = axios.create({
   },
 });
 
+/** Backend wraps JSON in { success, data, timestamp } via TransformInterceptor */
+function unwrapApiEnvelope<T>(payload: unknown): T {
+  if (
+    payload !== null &&
+    typeof payload === 'object' &&
+    'success' in payload &&
+    'data' in payload &&
+    (payload as { success: unknown }).success === true
+  ) {
+    return (payload as { data: T }).data;
+  }
+  return payload as T;
+}
+
 // Flag to prevent multiple concurrent refresh mechanisms
 let isRefreshing = false;
 let refreshSubscribers: ((token: string) => void)[] = [];
@@ -72,7 +86,7 @@ apiClient.interceptors.response.use(
           { withCredentials: true }
         );
 
-        const { accessToken } = response.data;
+        const { accessToken } = unwrapApiEnvelope<{ accessToken: string }>(response.data);
         
         // Update store
         useAuthStore.getState().updateToken(accessToken);

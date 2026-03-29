@@ -1,0 +1,274 @@
+﻿[
+    {
+        "Name":  "app.controller.spec.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src"
+    },
+    {
+        "Name":  "app.controller.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src"
+    },
+    {
+        "Name":  "app.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src"
+    },
+    {
+        "Name":  "app.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src"
+    },
+    {
+        "Name":  "file_list.json",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src"
+    },
+    {
+        "Name":  "main.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src"
+    },
+    {
+        "Name":  "queues.constant.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\constants"
+    },
+    {
+        "Name":  "roles.constant.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\constants"
+    },
+    {
+        "Name":  "statuses.constant.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\constants"
+    },
+    {
+        "Name":  "current-user.decorator.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\decorators"
+    },
+    {
+        "Name":  "roles.decorator.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\decorators"
+    },
+    {
+        "Name":  "global-exception.filter.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\filters"
+    },
+    {
+        "Name":  "jwt-auth.guard.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\guards"
+    },
+    {
+        "Name":  "jwt-refresh.guard.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\guards"
+    },
+    {
+        "Name":  "roles.guard.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\guards"
+    },
+    {
+        "Name":  "logging.interceptor.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\interceptors"
+    },
+    {
+        "Name":  "transform.interceptor.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\interceptors"
+    },
+    {
+        "Name":  "pagination.util.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\common\\utils"
+    },
+    {
+        "Name":  "approvals.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\approvals"
+    },
+    {
+        "Name":  "approvals.controller.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\approvals\\controllers"
+    },
+    {
+        "Name":  "approval-engine.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\approvals\\services"
+    },
+    {
+        "Name":  "approvals.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\approvals\\services"
+    },
+    {
+        "Name":  "template-routing.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\approvals\\services"
+    },
+    {
+        "Name":  "auth.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\auth"
+    },
+    {
+        "Name":  "auth.controller.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\auth\\controllers"
+    },
+    {
+        "Name":  "change-password.dto.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\auth\\dto"
+    },
+    {
+        "Name":  "forgot-password.dto.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\auth\\dto"
+    },
+    {
+        "Name":  "login.dto.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\auth\\dto"
+    },
+    {
+        "Name":  "reset-password.dto.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\auth\\dto"
+    },
+    {
+        "Name":  "signup.dto.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\auth\\dto"
+    },
+    {
+        "Name":  "auth.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\auth\\services"
+    },
+    {
+        "Name":  "jwt-refresh.strategy.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\auth\\strategies"
+    },
+    {
+        "Name":  "jwt.strategy.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\auth\\strategies"
+    },
+    {
+        "Name":  "companies.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\companies"
+    },
+    {
+        "Name":  "companies.controller.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\companies\\controllers"
+    },
+    {
+        "Name":  "company.entity.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\companies\\entities"
+    },
+    {
+        "Name":  "companies.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\companies\\services"
+    },
+    {
+        "Name":  "currency.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\currency"
+    },
+    {
+        "Name":  "currency.controller.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\currency\\controllers"
+    },
+    {
+        "Name":  "currency.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\currency\\services"
+    },
+    {
+        "Name":  "email.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\email"
+    },
+    {
+        "Name":  "email.processor.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\email\\services"
+    },
+    {
+        "Name":  "email.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\email\\services"
+    },
+    {
+        "Name":  "expenses.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\expenses"
+    },
+    {
+        "Name":  "expenses.controller.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\expenses\\controllers"
+    },
+    {
+        "Name":  "create-expense.dto.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\expenses\\dto"
+    },
+    {
+        "Name":  "expense.entity.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\expenses\\entities"
+    },
+    {
+        "Name":  "expenses.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\expenses\\services"
+    },
+    {
+        "Name":  "notifications.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\notifications"
+    },
+    {
+        "Name":  "notifications.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\notifications"
+    },
+    {
+        "Name":  "ocr.controller.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\ocr"
+    },
+    {
+        "Name":  "ocr.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\ocr"
+    },
+    {
+        "Name":  "ocr.processor.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\ocr"
+    },
+    {
+        "Name":  "ocr.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\ocr"
+    },
+    {
+        "Name":  "prisma.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\prisma"
+    },
+    {
+        "Name":  "prisma.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\prisma"
+    },
+    {
+        "Name":  "upload.controller.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\upload"
+    },
+    {
+        "Name":  "upload.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\upload"
+    },
+    {
+        "Name":  "upload.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\upload"
+    },
+    {
+        "Name":  "users.module.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\users"
+    },
+    {
+        "Name":  "users.controller.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\users\\controllers"
+    },
+    {
+        "Name":  "assign-role.dto.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\users\\dto"
+    },
+    {
+        "Name":  "create-user.dto.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\users\\dto"
+    },
+    {
+        "Name":  "update-user.dto.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\users\\dto"
+    },
+    {
+        "Name":  "user.entity.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\users\\entities"
+    },
+    {
+        "Name":  "users.service.ts",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\modules\\users\\services"
+    },
+    {
+        "Name":  "main.js",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\scripts"
+    },
+    {
+        "Name":  "test-db.js",
+        "DirectoryName":  "D:\\Odoo-x-VIT-Hackathon\\backend\\src\\scripts"
+    }
+]

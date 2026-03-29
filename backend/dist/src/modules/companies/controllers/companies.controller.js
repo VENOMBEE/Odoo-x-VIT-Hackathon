@@ -11,16 +11,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CompaniesController = void 0;
 const common_1 = require("@nestjs/common");
 const client_1 = require("@prisma/client");
-const companies_service_1 = require("./companies.service");
-const jwt_auth_guard_1 = require("../../common/guards/jwt-auth.guard");
-const roles_guard_1 = require("../../common/guards/roles.guard");
-const roles_decorator_1 = require("../../common/decorators/roles.decorator");
-const current_user_decorator_1 = require("../../common/decorators/current-user.decorator");
+const companies_service_1 = require("../services/companies.service");
+const jwt_auth_guard_1 = require("../../../common/guards/jwt-auth.guard");
+const roles_guard_1 = require("../../../common/guards/roles.guard");
+const roles_decorator_1 = require("../../../common/decorators/roles.decorator");
+const current_user_decorator_1 = require("../../../common/decorators/current-user.decorator");
 let CompaniesController = class CompaniesController {
     companiesService;
     constructor(companiesService) {
@@ -54,6 +53,6 @@ __decorate([
 exports.CompaniesController = CompaniesController = __decorate([
     (0, common_1.Controller)('companies'),
     (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
-    __metadata("design:paramtypes", [typeof (_a = typeof companies_service_1.CompaniesService !== "undefined" && companies_service_1.CompaniesService) === "function" ? _a : Object])
+    __metadata("design:paramtypes", [companies_service_1.CompaniesService])
 ], CompaniesController);
 //# sourceMappingURL=companies.controller.js.map
